@@ -31,8 +31,8 @@ using namespace std;
 void print(vector<ll> &a) { loop(i, 0, a.size()) cout << a[i] << ' '; }
 template <typename T>
 using my_ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
-
 int i, j, k, n, m, t, a[200500];
+
 void mdmerazulislam()
 {
     int res = -1, l, r;
