@@ -54,7 +54,7 @@ void mdmerazulislam()
         if (sb == res)
             break;
     }
-    cout<<a[r]<<" "<<l<<" "<< r<<endl;
+    cout<<a[r]<<" "<<l<<" "<< r<<line;
 }
 
 int main()
