@@ -60,7 +60,6 @@ void mdmerazulislam()
 int main()
 {
     fast;
-    
         int t;
         cin >> t;
         while (t--)mdmerazulislam();
