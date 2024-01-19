@@ -123,8 +123,7 @@ signed main()
                 ba.pop_back();
             }
             if (cntba > d)
-            {
-                cout << "NO" << endl;
+            {no;
                 continue;
             }
         }
