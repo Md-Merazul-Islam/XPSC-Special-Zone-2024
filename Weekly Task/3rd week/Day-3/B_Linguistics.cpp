@@ -130,7 +130,7 @@ signed main()
                 continue;
             }
         }
-        cout << "YES" << endl;
+        yes;
     }
     return 0;
 }
