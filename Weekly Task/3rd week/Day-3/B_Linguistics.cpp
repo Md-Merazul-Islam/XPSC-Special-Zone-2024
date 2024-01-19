@@ -110,8 +110,7 @@ signed main()
                 ab.pop_back();
             }
             if (cntab > c)
-            {
-                cout << "NO" << endl;
+            {no;
                 continue;
             }
         }
