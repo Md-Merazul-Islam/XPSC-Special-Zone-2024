@@ -98,8 +98,7 @@ signed main()
         }
         if (a < 0 || b < 0)
         {
-            cout << "NO" << endl;
-            continue;
+            cout << "NO" << endl;continue;
         }
         {
             int tep = min(a, b);
