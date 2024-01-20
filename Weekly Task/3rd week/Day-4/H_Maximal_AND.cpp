@@ -46,7 +46,7 @@ void hello_wrold_solve_here()
         if (cnt <= K)
             K -= cnt, ans |= 1 << i;
     }
-    cout << ans << endl;
+    cout << ans << line;
 }
 
 int32_t main()
