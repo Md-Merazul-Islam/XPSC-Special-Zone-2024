@@ -32,12 +32,9 @@ void hello_wrold_solve_here()
 {
     
     int n;cin>>n;
-    if(n<=30)no;
-    else {yes;
-        if(n!=44 && n!=40 && n!=36)
-        {
-             cout << "6 10 14 " << n - 30 << endl;
-        }else  cout << "6 10 15 " << n - 31 << endl;
+    if (n==4)cout<<"1 1 1 1"<<line;
+    else{
+        cout<<n-3<<" 1 1 1"<<endl;
     }
 }
 
