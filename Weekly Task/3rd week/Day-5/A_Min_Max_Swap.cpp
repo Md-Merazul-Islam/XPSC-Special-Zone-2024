@@ -46,8 +46,8 @@ void hello_wrold_solve_here()
         if (a[i] > b[i])
             swap(a[i], b[i]);
     }
-
     int tmp = *max_element(all(a));
+
     int tmp2 = *max_element(all(b));
     cout << tmp * tmp2 << endl;
 }
