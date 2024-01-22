@@ -33,7 +33,8 @@ void hello_wrold_solve_here()
 {
         ll n;
         cin >> n;
-        if(n % 2050) cout << "-1\n";
+        if(n % 2050)
+         cout << "-1\n";
         else{
             ll v = n / 2050;
             int ans = 0;
