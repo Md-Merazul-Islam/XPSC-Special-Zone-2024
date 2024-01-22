@@ -31,7 +31,6 @@ template <typename T> using my_ordered_set = tree<T, null_type, less<T>, rb_tree
 const int N = 2e5 +5;
 void hello_wrold_solve_here()
 {
-    
     ll n;
         cin >> n;
         if(n % 2050) cout << "-1\n";
