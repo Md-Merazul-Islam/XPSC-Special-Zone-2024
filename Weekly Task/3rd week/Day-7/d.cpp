@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-bool solve(int n, ll t)
+bool solve(int n, int t)
 {
     if (t == n)
     {
