@@ -4,9 +4,9 @@ using namespace std;
 bool solve(int n, ll t)
 {
     if (t == n)
-    {
+    
         return true;
-    }
+    
     if (t > n)
     {
         return false;
