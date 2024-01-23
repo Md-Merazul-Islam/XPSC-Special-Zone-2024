@@ -3,7 +3,7 @@ using namespace std;
 #define ll long long
 bool solve(int n, ll t)
 {
-    if (t == n
+    if (t == n)
     {
         return true;
     }
