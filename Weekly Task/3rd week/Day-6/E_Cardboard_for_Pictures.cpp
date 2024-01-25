@@ -49,7 +49,6 @@ void hello_wrold_solve_here()
     }
 
     ll ans = 0;
-    ll ans = 0;
     ll left = 0, right = 1e9;
 
     while (left <= right) {
