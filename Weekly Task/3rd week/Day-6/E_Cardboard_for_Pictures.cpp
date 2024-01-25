@@ -56,7 +56,6 @@ void hello_wrold_solve_here()
 
         if (valk > c) {
             right = mid - 1;
-            right = mid - 1;
         } else if (valk < c) {
             left = mid + 1;
         } else {
