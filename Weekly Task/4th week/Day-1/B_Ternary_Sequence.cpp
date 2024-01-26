@@ -33,7 +33,6 @@ using my_ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_stati
 const int N = 2e5 + 5;
 void hello_wrold_solve_here()
 {
-
     int a, c, e, f;
     cin >> a >> f >> c >> f >> e >> f;
     cout << min({c, e, a + c - f}) * 2 ;nl;
