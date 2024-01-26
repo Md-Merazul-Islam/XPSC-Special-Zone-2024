@@ -35,6 +35,7 @@ void hello_wrold_solve_here()
 {
     int a, c, e, f;
     cin >> a >> f >> c >> f >> e >> f;
+    cin >> a >> f >> c >> f >> e >> f;
     cout << min({c, e, a + c - f}) * 2 ;nl;
 }
 
