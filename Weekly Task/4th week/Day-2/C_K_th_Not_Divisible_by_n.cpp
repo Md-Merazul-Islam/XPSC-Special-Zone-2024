@@ -43,7 +43,6 @@ void mdmerazulislam()
         }
     }
     cout << r << nl;
-    cout << r << nl;
 }
 
 int main()
