@@ -72,7 +72,6 @@ signed main()
     fast;
     int t = 1;
     while (t--)
-    while (t--)
         hello_world_solve_here();
     return 0;
 }
