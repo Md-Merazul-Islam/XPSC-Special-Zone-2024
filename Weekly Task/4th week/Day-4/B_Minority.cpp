@@ -60,6 +60,7 @@ void hello_world_solve_here()
             }else if(count1>count0){
                 cout<<count0<<endl;
             }else{
+            }else{
                 cout<<count1<<endl;
             }
         }
