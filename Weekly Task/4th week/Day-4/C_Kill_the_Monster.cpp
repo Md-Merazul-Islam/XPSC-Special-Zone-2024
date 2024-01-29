@@ -1,3 +1,4 @@
+
 /**************************************************************
 **               BISMILLAH HIR RAHMAN NIR RAHIM              **
 **             https://github.com/Md-Merazul-Islam           **
@@ -30,40 +31,34 @@ void print(vector<ll> &a) { loop(i, 0, a.size()) cout << a[i] << ' '; }
 template <typename T>
 using my_ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 const int N = 2e5 + 5;
-
 void hello_world_solve_here()
 {
-    string s;
-    cin >> s;
-    ll l = 0, r = s.size() - 1;  
-    vi left, right;
-    while (l < r)
+
+    ll hc, dc, hm, dm, k, w, a;
+    cin >> hc >> dc >> hm >> dm >> k >> w >> a;
+
+    bool ok = false;
+    for (int i = 0; i <= k; i++)
     {
-        while (l < s.size() && s[l] == ')')
-            l++;
-        while (r >= 0 && s[r] == '(')
-            r--;
-        if (l < s.size() && r >= 0 && l < r)
+        ll nhc = hc + i * a;
+        ll ndc = dc + (k - i) * w;
+        if ((hm + ndc - 1) / ndc <= (nhc + dm - 1) / dm)
         {
-            left.pb(l + 1);
-            right.pb(r + 1);
-            l++;
-            r--;
+            yes;
+            ok = true;
+            break;
         }
     }
-
-    if (left.empty())
-    {
-        cout << "0\n";
-        return;
-    }
-    cout << "1\n";
-    cout << 2 * left.size() << line;
-    for (auto i : left)
-        cout << i << " ";
-    reverse(all(right));
-    for (auto i : right)
-        cout << i << " ";
-    cout << "\n";
+    if (!ok)
+        no;
 }
 
+signed main()
+{
+    fast;
+    int t = 1;
+    cin >> t;
+    while (t--)
+        hello_world_solve_here();
+    return 0;
+}

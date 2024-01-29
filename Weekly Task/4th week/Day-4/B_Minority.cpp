@@ -1,3 +1,4 @@
+
 /**************************************************************
 **               BISMILLAH HIR RAHMAN NIR RAHIM              **
 **             https://github.com/Md-Merazul-Islam           **
@@ -30,40 +31,46 @@ void print(vector<ll> &a) { loop(i, 0, a.size()) cout << a[i] << ' '; }
 template <typename T>
 using my_ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 const int N = 2e5 + 5;
-
 void hello_world_solve_here()
 {
     string s;
-    cin >> s;
-    ll l = 0, r = s.size() - 1;  
-    vi left, right;
-    while (l < r)
-    {
-        while (l < s.size() && s[l] == ')')
-            l++;
-        while (r >= 0 && s[r] == '(')
-            r--;
-        if (l < s.size() && r >= 0 && l < r)
-        {
-            left.pb(l + 1);
-            right.pb(r + 1);
-            l++;
-            r--;
+        cin>>s;
+        if(s.size()==0){
+            cout<<0<<endl;
         }
-    }
-
-    if (left.empty())
-    {
-        cout << "0\n";
-        return;
-    }
-    cout << "1\n";
-    cout << 2 * left.size() << line;
-    for (auto i : left)
-        cout << i << " ";
-    reverse(all(right));
-    for (auto i : right)
-        cout << i << " ";
-    cout << "\n";
+        else if(s.size()==1){
+            cout<<0<<endl;
+        }
+        else if(s.size()==2){
+            cout<<0<<endl;
+        }
+        else{
+            int count1=0, count0=0;
+            while(s.size()){
+                if(s[0]=='0'){
+                    count0++;
+                }
+                else{
+                    count1++;
+                }
+                s=s.substr(1);
+            }
+            if(count1==count0){
+                cout<<count1-1<<endl;
+            }else if(count1>count0){
+                cout<<count0<<endl;
+            }else{
+                cout<<count1<<endl;
+            }
+        }
 }
 
+signed main()
+{
+    fast;
+    int t = 1;
+    cin >> t;
+    while (t--)
+        hello_world_solve_here();
+    return 0;
+}
